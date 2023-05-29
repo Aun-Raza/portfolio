@@ -42,7 +42,8 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture,
-svg {
+svg,
+label {
   max-width: 100%;
   display: block;
 }
