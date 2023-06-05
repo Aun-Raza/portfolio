@@ -351,25 +351,43 @@
     </section>
     <!-- Footer -->
     <footer class="bg-primary-400">
-      <h2 class="fs-primary-heading fw-semi-bold text-center">Contact</h2>
+      <h2 class="fs-primary-heading fw-semi-bold text-center">Contact Me</h2>
       <div class="container">
-        <form>
+        <form action="https://formspree.io/f/xwkjdqbd" method="POST">
           <div class="contact-form-wrapper">
             <div>
               <label for="email" class="fs-content-heading">Email</label>
-              <input type="email" id="email" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Enter your email address."
+                required
+              />
             </div>
             <div>
               <label for="subject" class="fs-content-heading">Subject</label>
-              <input type="text" id="subject" name="subject" />
+              <input
+                type="text"
+                id="subject"
+                name="Subject"
+                placeholder="For example, ice cream, Microsoft, AI"
+                required
+              />
             </div>
             <div class="span-col-2">
-              <label for="body" class="fs-content-heading">Body</label>
-              <textarea id="body" name="body" rows="4"></textarea>
+              <label for="body" class="fs-content-heading">Message</label>
+              <textarea
+                id="message"
+                name="Message"
+                rows="4"
+                placeholder="Aun, you are hired! Your salary will start from $100k per year."
+                required
+              ></textarea>
             </div>
           </div>
           <div class="contact-buttons-wrapper">
-            <button>
+            <button type="submit">
               <svg class="icon">
                 <use
                   xlink:href="images/social-icons.svg#send_email_icon"
