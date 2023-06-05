@@ -88,13 +88,15 @@ input[type='button'] {
   margin-block-start: var(--size-200);
 }
 
-button > img {
+button > svg {
   width: var(--size-500);
+  aspect-ratio: 1;
 }
 
 button:hover,
 input[type='button']:hover {
-  background-color: var(--clr-accent-500);
+  background-color: var(--clr-neutral-400);
+  border-color: var(--clr-neutral-400);
 }
 
 /* Component styling */
@@ -140,7 +142,6 @@ input[type='button']:hover {
   height: inherit;
   border-radius: inherit;
   padding-inline-start: var(--size-100);
-
   display: inline-flex;
   gap: var(--size-200);
   align-items: center;
@@ -148,6 +149,7 @@ input[type='button']:hover {
 
 .skill-item-metric-icon {
   height: 90%;
+  width: var(--size-800);
 }
 
 .skill-item-rate {
@@ -157,10 +159,11 @@ input[type='button']:hover {
 
 .social-resources {
   display: flex;
+  justify-content: center;
   gap: var(--size-400);
 }
 
-.social-resources img {
+.social-resources svg {
   width: var(--size-900);
   aspect-ratio: 1;
   border: var(--size-100) var(--clr-neutral-200) solid;
@@ -169,13 +172,13 @@ input[type='button']:hover {
   background-color: var(--clr-neutral-200);
 }
 
-.contact-buttons-wrapper > .social-resources img {
+.contact-buttons-wrapper > .social-resources svg {
   width: var(--size-700);
 }
 
-.social-resources img:hover {
-  background-color: var(--clr-accent-500);
-  border-color: var(--clr-accent-500);
+.social-resources svg:hover {
+  background-color: var(--clr-neutral-400);
+  border-color: var(--clr-neutral-400);
 }
 
 .projects-layout {
@@ -199,12 +202,13 @@ input[type='button']:hover {
 
 .project-item {
   padding: var(--size-300);
-  border: var(--size-100) var(--clr-accent-500) solid;
-  border-radius: var(--size-400);
+  border: var(--size-100) var(--clr-neutral-200) solid;
+  border-radius: var(--size-100);
 }
 
-.grid-resources {
+.project-resources {
   display: flex;
+  align-items: center;
   gap: var(--size-100);
 }
 
