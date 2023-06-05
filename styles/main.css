@@ -204,11 +204,19 @@ input[type='button']:hover {
   padding: var(--size-300);
   border: var(--size-100) var(--clr-neutral-200) solid;
   border-radius: var(--size-100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.project-item > :first-child {
+  height: 40%;
+  aspect-ratio: 1;
 }
 
 .project-resources {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: var(--size-100);
 }
 
@@ -232,6 +240,7 @@ input[type='button']:hover {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-block-start: var(--size-100);
 }
 
 /* Utility classes */
