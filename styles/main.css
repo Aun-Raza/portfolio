@@ -125,6 +125,11 @@ input[type='button']:hover {
   }
 }
 
+.photo-portrait {
+  border-radius: 10em;
+  aspect-ratio: 1;
+}
+
 .skills-layout {
   display: grid;
   gap: 1em;
